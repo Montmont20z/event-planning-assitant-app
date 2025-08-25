@@ -1,0 +1,23 @@
+[
+  {
+    "name": "John Cina",
+    "email": "john@gmail.com",
+    "phone": "1523456789",
+    "rsvp": "Pending",
+    "added_date": "2025-08-20 23:03"
+  },
+  {
+    "name": "Lim Ter",
+    "email": "lim@mail.com",
+    "phone": "456498123",
+    "rsvp": "Confirmed",
+    "added_date": "2025-08-20 23:03"
+  },
+  {
+    "name": "Jonathan",
+    "email": "johna@gmail.com",
+    "phone": "718217829791",
+    "rsvp": "Declined",
+    "added_date": "2025-08-21 17:09"
+  }
+]
