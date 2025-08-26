@@ -5,5 +5,19 @@
     "description": "Place",
     "amount": 123.0,
     "date": "2025-08-21"
+  },
+  {
+    "id": 2,
+    "category": "Decorations",
+    "description": "ZXZx",
+    "amount": 123.0,
+    "date": "2025-08-26"
+  },
+  {
+    "id": 3,
+    "category": "Decorations",
+    "description": "123",
+    "amount": 123.0,
+    "date": "2025-08-26"
   }
 ]
