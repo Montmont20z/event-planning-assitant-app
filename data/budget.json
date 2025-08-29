@@ -19,5 +19,12 @@
     "description": "123",
     "amount": 123.0,
     "date": "2025-08-26"
+  },
+  {
+    "id": 4,
+    "category": "Venue",
+    "description": "Catering",
+    "amount": 3200.5,
+    "date": "2025-08-28"
   }
 ]

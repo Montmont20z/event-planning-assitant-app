@@ -3,7 +3,7 @@
     "name": "John Cina",
     "email": "john@gmail.com",
     "phone": "1523456789",
-    "rsvp": "Pending",
+    "rsvp": "Declined",
     "added_date": "2025-08-20 23:03"
   },
   {
@@ -19,5 +19,12 @@
     "phone": "718217829791",
     "rsvp": "Declined",
     "added_date": "2025-08-21 17:09"
+  },
+  {
+    "name": "Alice Koh",
+    "email": "alice@example.com",
+    "phone": "0123456789",
+    "rsvp": "Confirmed",
+    "added_date": "2025-08-28 00:23"
   }
 ]

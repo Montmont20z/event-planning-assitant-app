@@ -1,14 +1,15 @@
 from BaseTracker import *
+from datetime import datetime
 
 # guest_manager.py - Guest management class
 class GuestManager(BaseTracker):
-    """Manages guest list - demonstrates inheritance and encapsulation"""
+    """Manages guest list - inheritance and encapsulation"""
     
     def __init__(self):
         super().__init__("data/guests.json")  # Inheritance - calling parent constructor
     
     def add_guest(self, name, email, phone=""):
-        """Add a new guest - demonstrates string processing and collections"""
+        """Add a new guest - string processing and collections"""
         # String processing - clean and validate input
         name = name.strip().title()  # Clean whitespace and capitalize
         email = email.strip().lower()  # Clean and normalize email

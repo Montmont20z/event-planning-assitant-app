@@ -1,10 +1,11 @@
 # base_tracker.py - Base class for inheritance
 import json
 import os
+
 from datetime import datetime
 
 class BaseTracker:
-    """Base class for all tracker components - demonstrates inheritance"""
+    """Base class for all tracker components -for inheritance"""
     
     def __init__(self, filename):
         self.filename = filename
@@ -12,7 +13,7 @@ class BaseTracker:
         self.load_data()
     
     def load_data(self):
-        """Load data from file - demonstrates file processing and exception handling"""
+        """Load data from file - file processing and exception handling"""
         try:
             # Create data directory if it doesn't exist
             os.makedirs("data", exist_ok=True)
@@ -27,7 +28,7 @@ class BaseTracker:
             self.data = []
     
     def save_data(self):
-        """Save data to file - demonstrates file processing and exception handling"""
+        """Save data to file - file processing and exception handling"""
         try:
             with open(self.filename, 'w') as file:
                 json.dump(self.data, file, indent=2)
@@ -35,7 +36,7 @@ class BaseTracker:
             print(f"Error saving data: {e}")
     
     def search_items(self, search_term):
-        """Search functionality - demonstrates string processing and loops"""
+        """Search functionality - string processing and loops"""
         if not search_term:  # Selection - if condition
             return self.data
         

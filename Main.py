@@ -8,7 +8,7 @@ from tkinter import ttk, messagebox
 from datetime import datetime, timedelta
 
 class EventPlannerApp:
-    """Main application class - demonstrates GUI and encapsulation"""
+    """Main application class GUI and encapsulation"""
     
     def __init__(self):
         self.root = tk.Tk()
@@ -27,7 +27,7 @@ class EventPlannerApp:
         self.update_countdown()
     
     def setup_gui(self):
-        """Setup the GUI - demonstrates GUI creation"""
+        """Setup the GUI -GUI creation"""
         # Create notebook for tabs
         notebook = ttk.Notebook(self.root)
         notebook.pack(fill='both', expand=True, padx=10, pady=10)
@@ -39,7 +39,7 @@ class EventPlannerApp:
         self.create_countdown_tab(notebook)
     
     def create_guest_tab(self, notebook):
-        """Create guest management tab - demonstrates GUI and functions"""
+        """Create guest management tab  GUI and functions"""
         guest_frame = ttk.Frame(notebook)
         notebook.add(guest_frame, text="Guests")
         
@@ -212,7 +212,7 @@ class EventPlannerApp:
         self.update_summary()
     
     def add_guest(self):
-        """Add guest function - demonstrates exception handling"""
+        """Add guest function - exception handling"""
         try:
             name = self.guest_name_var.get()
             email = self.guest_email_var.get()
@@ -248,7 +248,7 @@ class EventPlannerApp:
             messagebox.showerror("Error", "Failed to update RSVP")
     
     def refresh_guests(self):
-        """Refresh guest list display - demonstrates loops"""
+        """Refresh guest list display - loops"""
         # Clear existing items
         for item in self.guest_tree.get_children():  # Loop
             self.guest_tree.delete(item)
@@ -348,7 +348,7 @@ class EventPlannerApp:
             messagebox.showerror("Error", "Invalid date format. Use YYYY-MM-DD")
     
     def update_countdown(self):
-        """Update countdown timer - demonstrates loops and selection"""
+        """Update countdown timer - loops and selection"""
         now = datetime.now()
         
         if self.event_date > now:  # Selection - check if event is in future
@@ -368,7 +368,7 @@ class EventPlannerApp:
         self.root.after(60000, self.update_countdown)
     
     def update_summary(self):
-        """Update event summary - demonstrates string processing and functions"""
+        """Update event summary - string processing and functions"""
         # Get summaries from managers
         guest_summary = self.guest_manager.get_rsvp_summary()
         task_total, task_completed, task_pending = self.task_manager.get_task_summary()

@@ -1,7 +1,7 @@
 from BaseTracker import *
 # budget_manager.py - Budget management class
 class BudgetManager(BaseTracker):
-    """Manages event budget - demonstrates inheritance and encapsulation"""
+    """Manages event budget - inheritance and encapsulation"""
     
     def __init__(self):
         super().__init__("data/budget.json")
@@ -9,7 +9,7 @@ class BudgetManager(BaseTracker):
         self.categories = {'Venue', 'Food', 'Decorations', 'Entertainment', 'Miscellaneous'}
     
     def add_expense(self, category, description, amount):
-        """Add an expense - demonstrates string processing and validation"""
+        """Add an expense - string processing and validation"""
         # String processing - clean inputs
         category = category.strip().title()
         description = description.strip()
@@ -42,7 +42,7 @@ class BudgetManager(BaseTracker):
         self.save_data()
     
     def get_budget_summary(self):
-        """Get budget summary by category - demonstrates collections and loops"""
+        """Get budget summary by category - collections and loops"""
         summary = {}  # Dictionary collection
         total = 0
         
